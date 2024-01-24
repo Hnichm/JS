@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.game-container {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "sidebar main-content main-content"
+    "controls controls message";
+
+  grid-template-rows: 0.25fr 2fr 0.5fr;
+
+  grid-template-columns: 0.5fr 2fr 1fr;
+
+  height: 100vh;
+}
+
+.header {
+  grid-area: header;
+  border: 1px solid purple;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  border: 1px solid blue;
+}
+
+.main-content {
+  grid-area: main-content;
+  border: 1px solid red;
+}
+
+.controls {
+  grid-area: controls;
+  border: 1px limegreen solid;
+}
+
+.message {
+  grid-area: message;
+  min-width: 0.25fr;
+  border: 1px solid orange;
+}
